@@ -1,10 +1,11 @@
 {
   "name": "modal-react-p14",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Another modal ",
   "main": "dist/index.js",
   "scripts": {
-    "build": "babel src --out-dir dist"
+    "build": "babel src --out-dir dist",
+    "publish": "npm publish --access public"
   },
   "author": "",
   "license": "ISC",
