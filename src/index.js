@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
+import PropTypes from "prop-types";
 
-export const Modal = () => {
-    const [color, setColor] = useState('blue');
+Modal.propTypes = {
+    onClose: PropTypes.func,
+    errorMessage: PropTypes.string,
+    modalMessage: PropTypes.string,
+    color: PropTypes.string,
+};
 
-    const changeColor = () => {
-        setColor(color === 'blue' ? 'red' : 'blue');
-    };
+export const Modal = ({ onClose, errorMessage, modalMessage, color = 'blue' }) => {
 
     const modalStyle = {
         backgroundColor: color,
@@ -25,5 +28,3 @@ export const Modal = () => {
         </div>
     );
 };
-
-export default Button;
