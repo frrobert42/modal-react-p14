@@ -8,7 +8,7 @@ Modal.propTypes = {
     color: PropTypes.string,
 };
 
-export const Modal = ({ onClose, errorMessage, modalMessage, color = 'blue' }) => {
+export default function Modal({ onClose, errorMessage, modalMessage, color = 'blue' }) {
 
     const modalStyle = {
         backgroundColor: color,
