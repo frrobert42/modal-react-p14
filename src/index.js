@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './index.css';
 
-const Modal = () => {
+export const Modal = () => {
     const [color, setColor] = useState('blue');
 
     const changeColor = () => {
