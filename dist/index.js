@@ -30,9 +30,7 @@ function Modal(_ref) {
     padding: "10px"
   };
   var buttonStyle = {
-    marginLeft: "auto",
-    marginTop: "-20px",
-    marginRight: "-20px"
+    marginLeft: "auto"
   };
   var overlayStyle = {
     position: "fixed",

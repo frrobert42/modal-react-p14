@@ -24,6 +24,7 @@ export default function Modal({ onClose, modalMessage, color = 'blue' }) {
 
     const buttonStyle = {
         marginLeft: "auto",
+        cursor: "pointer",
     };
 
     let overlayStyle = {
