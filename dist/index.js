@@ -32,8 +32,7 @@ function Modal(_ref) {
   var buttonStyle = {
     marginLeft: "auto",
     marginTop: "-20px",
-    marginRight: "-20px",
-    backgroundColor: "white"
+    marginRight: "-20px"
   };
   var overlayStyle = {
     position: "fixed",
@@ -62,7 +61,11 @@ function Modal(_ref) {
     fill: "none",
     width: "24",
     height: "24"
-  }), /*#__PURE__*/_react["default"].createElement("g", null, /*#__PURE__*/_react["default"].createElement("path", {
+  }), /*#__PURE__*/_react["default"].createElement("g", {
+    style: {
+      backgroundColor: "white"
+    }
+  }, /*#__PURE__*/_react["default"].createElement("path", {
     d: "M19.1 4.9C15.2 1 8.8 1 4.9 4.9S1 15.2 4.9 19.1s10.2 3.9 14.1 0 4-10.3.1-14.2zm-4.3 11.3L12 13.4l-2.8 2.8-1.4-1.4 2.8-2.8-2.8-2.8 1.4-1.4 2.8 2.8 2.8-2.8 1.4 1.4-2.8 2.8 2.8 2.8-1.4 1.4z"
   }))), /*#__PURE__*/_react["default"].createElement("div", {
     className: "mt-2 text-sm font-medium"
