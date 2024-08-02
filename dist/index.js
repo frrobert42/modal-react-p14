@@ -31,8 +31,9 @@ function Modal(_ref) {
   };
   var buttonStyle = {
     marginLeft: "auto",
-    marginTop: "-24px",
-    marginRight: "-24px"
+    marginTop: "-20px",
+    marginRight: "-20px",
+    backgroundColor: "white"
   };
   var overlayStyle = {
     position: "fixed",
