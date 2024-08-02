@@ -41,17 +41,9 @@ export default function Modal({ onClose, modalMessage, color = 'blue' }) {
     return (
         <div style={overlayStyle}>
             <div className="modal-react-p14 rounded-md p-4" style={modalStyle}>
-                <Image src="/img/cross.svg" onClick={onClose} style={buttonStyle}/>
+                <image href="/img/cross.svg" onClick={onClose} style={buttonStyle}/>
                 <div className="mt-2 text-sm font-medium">
                     <p>{modalMessage}</p>
-                    {/*<button*/}
-                    {/*    type="button"*/}
-                    {/*    style={buttonStyle}*/}
-                    {/*    onClick={onClose}*/}
-                    {/*    className={"modal-react-p14-button"}*/}
-                    {/*>*/}
-                    {/*    Dismiss*/}
-                    {/*</button>*/}
                 </div>
             </div>
         </div>
