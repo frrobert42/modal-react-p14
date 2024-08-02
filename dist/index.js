@@ -31,8 +31,8 @@ function Modal(_ref) {
   };
   var buttonStyle = {
     marginLeft: "auto",
-    marginTop: "-20px",
-    marginRight: "-20px"
+    marginTop: "-24px",
+    marginRight: "-24px"
   };
   var overlayStyle = {
     position: "fixed",
@@ -49,11 +49,21 @@ function Modal(_ref) {
   }, /*#__PURE__*/_react["default"].createElement("div", {
     className: "modal-react-p14 rounded-md p-4",
     style: modalStyle
-  }, /*#__PURE__*/_react["default"].createElement(Image, {
-    src: "/img/cross.svg",
+  }, /*#__PURE__*/_react["default"].createElement("svg", {
+    className: buttonStyle,
     onClick: onClose,
-    style: buttonStyle
-  }), /*#__PURE__*/_react["default"].createElement("div", {
+    width: "24px",
+    height: "24px",
+    viewBox: "0 0 24 24",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/_react["default"].createElement("rect", {
+    x: "0",
+    fill: "none",
+    width: "24",
+    height: "24"
+  }), /*#__PURE__*/_react["default"].createElement("g", null, /*#__PURE__*/_react["default"].createElement("path", {
+    d: "M19.1 4.9C15.2 1 8.8 1 4.9 4.9S1 15.2 4.9 19.1s10.2 3.9 14.1 0 4-10.3.1-14.2zm-4.3 11.3L12 13.4l-2.8 2.8-1.4-1.4 2.8-2.8-2.8-2.8 1.4-1.4 2.8 2.8 2.8-2.8 1.4 1.4-2.8 2.8 2.8 2.8-1.4 1.4z"
+  }))), /*#__PURE__*/_react["default"].createElement("div", {
     className: "mt-2 text-sm font-medium"
   }, /*#__PURE__*/_react["default"].createElement("p", null, modalMessage))));
 }
