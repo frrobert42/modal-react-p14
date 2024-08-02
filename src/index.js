@@ -24,8 +24,9 @@ export default function Modal({ onClose, modalMessage, color = 'blue' }) {
 
     const buttonStyle = {
         marginLeft: "auto",
-        marginTop: "-24px",
-        marginRight: "-24px"
+        marginTop: "-20px",
+        marginRight: "-20px",
+        backgroundColor: "white",
     };
 
     let overlayStyle = {

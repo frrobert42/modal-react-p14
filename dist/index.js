@@ -50,7 +50,7 @@ function Modal(_ref) {
     className: "modal-react-p14 rounded-md p-4",
     style: modalStyle
   }, /*#__PURE__*/_react["default"].createElement("svg", {
-    className: buttonStyle,
+    style: buttonStyle,
     onClick: onClose,
     width: "24px",
     height: "24px",
