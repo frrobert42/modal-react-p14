@@ -1,5 +1,7 @@
 ## Another modal component for React
 
+https://github.com/frrobert42/modal-react-p14
+
 ### Installation
 
 `npm install modal-react-p14`

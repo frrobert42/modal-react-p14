@@ -1,6 +1,6 @@
 {
   "name": "modal-react-p14",
-  "version": "4.0.1",
+  "version": "4.2.0",
   "description": "Another modal component for React",
   "main": "dist/index.js",
   "scripts": {
@@ -8,8 +8,12 @@
     "publish": "npm publish --access public",
     "debug": "babel src --out-dir dist && cp dist/index.js ../../hrnet/node_modules/modal-react-p14/dist/"
   },
-  "author": "",
+  "author": "Fred",
   "license": "ISC",
+  "tags": ["modal", "react", "component"],
+  "repository": {
+    "url": "https://github.com/frrobert42/modal-react-p14"
+  },
   "dependencies": {
     "@babel/cli": "^7.24.8",
     "@babel/core": "^7.25.2",
