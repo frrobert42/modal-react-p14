@@ -10,7 +10,7 @@
   },
   "author": "Fred",
   "license": "ISC",
-  "tags": ["modal", "react", "component"],
+  "keywords": ["modal", "react", "component"],
   "repository": {
     "url": "https://github.com/frrobert42/modal-react-p14"
   },
