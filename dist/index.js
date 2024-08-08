@@ -94,9 +94,9 @@ function Modal(_ref) {
     style: overlayStyle
   }, /*#__PURE__*/_react["default"].createElement("div", {
     className: "modal-react-p14 rounded-md p-4",
-    style: crossButtonStyle
+    style: modalStyle
   }, /*#__PURE__*/_react["default"].createElement("svg", {
-    style: buttonStyle,
+    style: crossButtonStyle,
     onClick: onClose,
     width: "24px",
     height: "24px",
