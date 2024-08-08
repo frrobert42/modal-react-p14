@@ -72,7 +72,7 @@ function Modal(_ref) {
   if (positionX === "left") modalStyle.left = "50px";else if (positionX === "right") modalStyle.right = "50px";else if (positionX === "center") modalStyle.left = "calc(50% - min(50%, 150px))";
 
   // Position Y : top, bottom, center
-  if (positionY === "top") modalStyle.top = "50px";else if (positionY === "bottom") modalStyle.bottom = "50px";else if (positionY === "center") modalStyle.top = "50%";
+  if (positionY === "top") modalStyle.top = "50px";else if (positionY === "bottom") modalStyle.bottom = "50px";else if (positionY === "center") modalStyle.top = "calc(50% - 100px)";
 
   // Cross button style
   var crossButtonStyle = {

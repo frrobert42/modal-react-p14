@@ -63,7 +63,7 @@ export default function Modal({
     // Position Y : top, bottom, center
     if (positionY === "top") modalStyle.top = "50px";
     else if (positionY === "bottom") modalStyle.bottom = "50px";
-    else if (positionY === "center") modalStyle.top = "50%";
+    else if (positionY === "center") modalStyle.top = "calc(50% - 100px)";
 
     // Cross button style
     const crossButtonStyle = {
