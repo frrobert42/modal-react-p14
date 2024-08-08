@@ -2,43 +2,89 @@ import React from 'react';
 import PropTypes from "prop-types";
 
 Modal.propTypes = {
-    onClose: PropTypes.func,
+    backgroundColor: PropTypes.string,
+    buttonBackgroundColor: PropTypes.string,
+    buttonColor: PropTypes.string,
+    buttonMessage: PropTypes.string,
+    color: PropTypes.string,
     modalMessage: PropTypes.string,
+    onClickButton: PropTypes.func,
+    onClose: PropTypes.func,
+    positionX: PropTypes.string,
+    positionY: PropTypes.string,
+    textColor: PropTypes.string,
 };
 
-export default function Modal({ onClose, modalMessage }) {
+export default function Modal({
+                                  backgroundColor = 'rgba(0,0,0,0.7)',
+                                  buttonBackgroundColor = 'rgba(0,0,0,0.7)',
+                                  buttonColor = 'lightgrey',
+                                  buttonMessage = '',
+                                  color = 'lightgrey',
+                                  modalMessage,
+                                  onClickButton = () => {},
+                                  onClose = () => {},
+                                  positionX = 'center',
+                                  positionY = 'center',
+                                  textColor = 'black',
+                              }) {
 
     // Styles
     const modalStyle = {
-        position: "absolute",
-        top: "50px",
-        left: "calc(50% - min(50%, 150px))",
-        width: "50%",
-        maxWidth: "300px",
-        minWidth: "min(100%, 300px)",
-        minHeight: "100px",
+        backgroundColor: color,
+        border: "1px solid black",
         borderRadius: "5px",
+        color: textColor,
+        maxWidth: "300px",
+        minHeight: "100px",
+        minWidth: "min(100%, 300px)",
         padding: "10px",
+        position: "absolute",
+        width: "50%",
     };
 
-    const buttonStyle = {
+    // Overlay style
+    let overlayStyle = {
+        backgroundColor,
+        bottom: 0,
+        height: "100%",
+        left: 0,
+        position: "fixed",
+        right: 0,
+        top: 0,
+        width: "100%",
+    };
+
+    // Position X : left, right, center
+    if (positionX === "left") modalStyle.left = "50px";
+    else if (positionX === "right") modalStyle.right = "50px";
+    else if (positionX === "center") modalStyle.left = "calc(50% - min(50%, 150px))";
+
+    // Position Y : top, bottom, center
+    if (positionY === "top") modalStyle.top = "50px";
+    else if (positionY === "bottom") modalStyle.bottom = "50px";
+    else if (positionY === "center") modalStyle.top = "50%";
+
+    // Cross button style
+    const crossButtonStyle = {
         marginLeft: "auto",
         cursor: "pointer",
     };
 
-    let overlayStyle = {
-        position: "fixed",
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        backgroundColor: "rgba(0,0,0,0.7)",
-        height: "100%",
-        width: "100%",
+    // Button style
+    const buttonStyle = {
+        cursor: "pointer",
+        margin: "auto",
+        borderRadius: "5px",
+        padding: "5px",
+        backgroundColor: buttonBackgroundColor,
+        color: buttonColor,
+        shadow: "0 0 10px rgba(0,0,0,0.5)",
     };
+
     return (
         <div style={overlayStyle}>
-            <div className="modal-react-p14 rounded-md p-4" style={modalStyle}>
+            <div className="modal-react-p14 rounded-md p-4" style={crossButtonStyle}>
                 {/* Cross */}
                 <svg
                     style={buttonStyle}
@@ -52,6 +98,12 @@ export default function Modal({ onClose, modalMessage }) {
                 <div className="mt-2 text-sm font-medium">
                     {/* Modal text */}
                     <p>{modalMessage}</p>
+                    {/* Optional Button */}
+                    {buttonMessage &&
+                        <button onClick={onClickButton} style={buttonStyle} className="button-modal">
+                                {buttonMessage}
+                        </button>
+                    }
                 </div>
             </div>
         </div>
