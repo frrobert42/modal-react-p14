@@ -84,10 +84,10 @@ export default function Modal({
 
     return (
         <div style={overlayStyle}>
-            <div className="modal-react-p14 rounded-md p-4" style={crossButtonStyle}>
+            <div className="modal-react-p14 rounded-md p-4" style={modalStyle}>
                 {/* Cross */}
                 <svg
-                    style={buttonStyle}
+                    style={crossButtonStyle}
                     onClick={onClose}
                     width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <rect x="0" fill="none" width="24" height="24"/>
