@@ -67,18 +67,18 @@ export default function Modal({
 
     // Cross button style
     const crossButtonStyle = {
-        marginLeft: "auto",
         cursor: "pointer",
+        marginLeft: "auto",
     };
 
     // Button style
     const buttonStyle = {
-        cursor: "pointer",
-        margin: "auto",
-        borderRadius: "5px",
-        padding: "5px",
         backgroundColor: buttonBackgroundColor,
+        borderRadius: "5px",
         color: buttonColor,
+        cursor: "pointer",
+        margin: "10px auto 0 auto",
+        padding: "5px",
         shadow: "0 0 10px rgba(0,0,0,0.5)",
     };
 
@@ -95,9 +95,9 @@ export default function Modal({
                         <path d="M19.1 4.9C15.2 1 8.8 1 4.9 4.9S1 15.2 4.9 19.1s10.2 3.9 14.1 0 4-10.3.1-14.2zm-4.3 11.3L12 13.4l-2.8 2.8-1.4-1.4 2.8-2.8-2.8-2.8 1.4-1.4 2.8 2.8 2.8-2.8 1.4 1.4-2.8 2.8 2.8 2.8-1.4 1.4z"/>
                     </g>
                 </svg>
-                <div className="mt-2 text-sm font-medium">
+                <div style={{marginTop: '0.5 rem'}}>
                     {/* Modal text */}
-                    <p>{modalMessage}</p>
+                    {modalMessage}
                     {/* Optional Button */}
                     {buttonMessage &&
                         <button onClick={onClickButton} style={buttonStyle} className="button-modal">

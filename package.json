@@ -1,6 +1,6 @@
 {
   "name": "modal-react-p14",
-  "version": "4.2.5",
+  "version": "4.2.6",
   "description": "Another modal component for React",
   "main": "dist/index.js",
   "scripts": {
