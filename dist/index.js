@@ -76,18 +76,18 @@ function Modal(_ref) {
 
   // Cross button style
   var crossButtonStyle = {
-    marginLeft: "auto",
-    cursor: "pointer"
+    cursor: "pointer",
+    marginLeft: "auto"
   };
 
   // Button style
   var buttonStyle = {
-    cursor: "pointer",
-    margin: "auto",
-    borderRadius: "5px",
-    padding: "5px",
     backgroundColor: buttonBackgroundColor,
+    borderRadius: "5px",
     color: buttonColor,
+    cursor: "pointer",
+    margin: "10px auto 0 auto",
+    padding: "5px",
     shadow: "0 0 10px rgba(0,0,0,0.5)"
   };
   return /*#__PURE__*/_react["default"].createElement("div", {
@@ -110,8 +110,10 @@ function Modal(_ref) {
   }), /*#__PURE__*/_react["default"].createElement("g", null, /*#__PURE__*/_react["default"].createElement("path", {
     d: "M19.1 4.9C15.2 1 8.8 1 4.9 4.9S1 15.2 4.9 19.1s10.2 3.9 14.1 0 4-10.3.1-14.2zm-4.3 11.3L12 13.4l-2.8 2.8-1.4-1.4 2.8-2.8-2.8-2.8 1.4-1.4 2.8 2.8 2.8-2.8 1.4 1.4-2.8 2.8 2.8 2.8-1.4 1.4z"
   }))), /*#__PURE__*/_react["default"].createElement("div", {
-    className: "mt-2 text-sm font-medium"
-  }, /*#__PURE__*/_react["default"].createElement("p", null, modalMessage), buttonMessage && /*#__PURE__*/_react["default"].createElement("button", {
+    style: {
+      marginTop: '0.5 rem'
+    }
+  }, modalMessage, buttonMessage && /*#__PURE__*/_react["default"].createElement("button", {
     onClick: onClickButton,
     style: buttonStyle,
     className: "button-modal"
