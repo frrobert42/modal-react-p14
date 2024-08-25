@@ -15,6 +15,32 @@ Modal.propTypes = {
     textColor: PropTypes.string,
 };
 
+/*
+ * Modal Component
+ * @constructor
+ * @param {string} backgroundColor - Background color of the modal
+ * @param {string} buttonBackgroundColor - Background color of the button
+ * @param {string} buttonColor - Color of the button
+ * @param {string} buttonMessage - Message of the button
+ * @param {string} color - Color of the modal
+ * @param {string} modalMessage - Message of the modal
+ * @param {function} onClickButton - Function to execute when the button is clicked
+ * @param {function} onClose - Function to execute when the modal is closed
+ * @param {string} positionX - Position of the modal on the x-axis
+ * @param {string} positionY - Position of the modal on the y-axis
+ * @param {string} textColor - Text color of the modal
+ * @return {JSX.Element}
+ * @constructor
+ * @description
+ * Modal component with a cross button to close it.
+ * The modal can be positioned on the x-axis and y-axis.
+ * The modal can have a button with a message.
+ * The button can execute a function when clicked.
+ * The modal can execute a function when closed.
+ * The modal can have a background color and a text color.
+ * The button can have a background color and a text color.
+ * The modal can have a message.
+*/
 export default function Modal({
                                   backgroundColor = 'rgba(0,0,0,0.7)',
                                   buttonBackgroundColor = 'rgba(0,0,0,0.7)',
